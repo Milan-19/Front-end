@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the webpage -->
+    <title>GrowthSaver: Eco-Friendly Savings Calculator</title>
+    <!-- Google Fonts for typography -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feather icons for UI elements -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left column containing eco-friendly information -->
+      <div class="left-column">
+        <div class="eco-icon">🌱</div>
+        <h1>GrowthSaver</h1>
+        <p class="description">
+          Nurture your financial future with our eco-friendly savings
+          calculator. Watch your money grow like a thriving garden!
+        </p>
+        <svg
+          class="savings-tree"
+          viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <!-- SVG graphic representing growth -->
+          <path d="M50 10 L90 90 H10 Z" fill="#4CAF50" />
+          <circle cx="50" cy="50" r="10" fill="#81C784" />
+          <rect x="45" y="90" width="10" height="20" fill="#3E2723" />
+        </svg>
+      </div>
+      <!-- Right column containing user inputs and results -->
+      <div class="right-column">
+        <!-- Input for savings goal amount -->
+        <div class="input-group">
+          <label for="goal-amount">Savings Goal Amount (₹)</label>
+          <input
+            type="number"
+            id="goal-amount"
+            placeholder="Enter your savings goal"
+            required
+          />
+          <i data-feather="target" class="input-icon"></i>
+        </div>
+        <!-- Input for current savings -->
+        <div class="input-group">
+          <label for="current-savings">Current Savings (₹)</label>
+          <input
+            type="number"
+            id="current-savings"
+            placeholder="Enter your current savings"
+            required
+          />
+          <i data-feather="dollar-sign" class="input-icon"></i>
+        </div>
+        <!-- Input for monthly contribution -->
+        <div class="input-group">
+          <label for="monthly-contribution">Monthly Contribution (₹)</label>
+          <input
+            type="number"
+            id="monthly-contribution"
+            placeholder="Enter your monthly contribution"
+            required
+          />
+          <i data-feather="trending-up" class="input-icon"></i>
+        </div>
+        <!-- Button to calculate savings growth -->
+        <button id="calculate-btn">
+          <i data-feather="refresh-cw"></i>
+          Grow Your Savings
+        </button>
+        <!-- Progress bar showing savings progress -->
+        <div class="progress-container">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <!-- Display result of the savings calculation -->
+        <div class="result" id="result"></div>
+      </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
