@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#root {
+  width: 80%;
+  margin: 16vh auto;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+#title {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+#description {
+  padding: 10px;
+}
+
+#counter {
+  padding: 10px;
+}
+
+#increase {
+  padding: 8px;
+  background-color: green;
+  color: white;
+}
+
+#decrease {
+  padding: 8px;
+  background-color: red;
+  color: white;
+}
+
+#reset {
+  padding: 8px;
+  background-color: gray;
+  color: white;
+}
