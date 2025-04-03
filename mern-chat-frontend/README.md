@@ -1,8 +1,43 @@
-# React + Vite
+# MERN Chat Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern real-time chat application frontend built with React and Socket.io.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Real-time messaging
+- User authentication
+- Responsive design with Chakra UI
+- React Router for navigation
+
+## Technologies Used
+
+- React
+- Chakra UI
+- Socket.io (client)
+- React Router
+- Axios for API requests
+- Tailwind CSS for styling
+
+## Development
+
+To start the development server:
+
+```bash
+npm run dev
+```
+
+## Building for Production
+
+To build the app for production:
+
+```bash
+npm run build
+```
+
+## Preview Production Build
+
+To preview the production build locally:
+
+```bash
+npm run preview
+```

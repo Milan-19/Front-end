@@ -24,7 +24,7 @@ const Register = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      await axios.post("http://localhost:3000/api/users/register", {
+      await axios.post("https://projects-6k1d.onrender.com/api/users/register", {
         username,
         email,
         password,

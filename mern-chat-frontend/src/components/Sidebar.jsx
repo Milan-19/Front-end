@@ -49,7 +49,7 @@ const Sidebar = ({ setSelectedGroup }) => {
     try {
       const userInfo = JSON.parse(localStorage.getItem("userInfo") || {});
       const token = userInfo.token;
-      const { data } = await axios.get("http://localhost:3000/api/groups", {
+      const { data } = await axios.get("https://projects-6k1d.onrender.com/api/groups", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setGroups(data);
@@ -70,7 +70,7 @@ const Sidebar = ({ setSelectedGroup }) => {
       const userInfo = JSON.parse(localStorage.getItem("userInfo") || {});
       const token = userInfo.token;
       await axios.post(
-        "http://localhost:3000/api/groups",
+        "https://projects-6k1d.onrender.com/api/groups",
         {
           name: newGroupName,
           description: newGroupDescription,
@@ -112,7 +112,7 @@ const Sidebar = ({ setSelectedGroup }) => {
       const userInfo = JSON.parse(localStorage.getItem("userInfo") || {});
       const token = userInfo.token;
       await axios.post(
-        `http://localhost:3000/api/groups/${groupId}/join`,
+        `https://projects-6k1d.onrender.com/api/groups/${groupId}/join`,
         {},
         {
           headers: {
@@ -144,7 +144,7 @@ const Sidebar = ({ setSelectedGroup }) => {
       const userInfo = JSON.parse(localStorage.getItem("userInfo") || {});
       const token = userInfo.token;
       await axios.post(
-        `http://localhost:3000/api/groups/${groupId}/leave`,
+        `https://projects-6k1d.onrender.com/api/groups/${groupId}/leave`,
         {},
         {
           headers: {

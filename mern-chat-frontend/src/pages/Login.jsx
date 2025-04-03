@@ -25,7 +25,7 @@ const Login = () => {
     setLoading(true);
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/api/users/login",
+        "https://projects-6k1d.onrender.com/api/users/login",
         { email, password }
       );
       // save user into localstorage

@@ -97,7 +97,7 @@ const ChatArea = ({ selectedGroup, socket, setSelectedGroup }) => {
     const token = currentUser?.token;
     try {
       const { data } = await axios.get(
-        `http://localhost:3000/api/messages/${selectedGroup?._id}`,
+        `https://projects-6k1d.onrender.com/api/messages/${selectedGroup?._id}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -116,7 +116,7 @@ const ChatArea = ({ selectedGroup, socket, setSelectedGroup }) => {
     try {
       const token = currentUser.token;
       const { data } = await axios.post(
-        `http://localhost:3000/api/messages`,
+        `https://projects-6k1d.onrender.com/api/messages`,
         {
           content: newMessage,
           groupId: selectedGroup?._id,
