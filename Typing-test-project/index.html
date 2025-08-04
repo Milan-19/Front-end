@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <h1>Typing Game</h1>
+      <div id="text-to-type"></div>
+      <input id="typing-input" type="text" placeholder="Start typing here..." />
+      <div id="stats">
+        <span>Speed: <span id="speed">0</span> WPM</span>
+        <span>Accuracy: <span id="accuracy">100</span>%</span>
+        <span>Time: <span id="timer">0</span>s</span>
+      </div>
+      <div id="message-area"></div>
+      <button id="restart">Restart</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
